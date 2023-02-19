@@ -1,0 +1,9 @@
+codeigniter:
+  build: .
+  container_name: codeigniter-app
+  ports:
+    - "8082:80"
+  volumes:
+    - ./:/var/www/html
+  external_links:
+    - service-mysql:mysql
